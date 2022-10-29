@@ -1,0 +1,77 @@
+# Site settings
+site: Thursdaycurry
+title: Thursdaycurry - The frontend developer with the heart of a designer
+keywords: frontend developer, programmer and artist, fashion, designer
+description: Thursdaycurry is the frontend Developer with a designer background.
+lang: en-US
+timezone: Europe/Istanbul
+repo: https://thursdaycurry.github.io/ # site repo [optional]
+# google_verify: XXX # Put your Google Verification here
+# google_analytics: UA-XXXXXXXX-00 # Put your Google Analytics code
+# discus-identifier: XXX
+
+# Author settings
+author:
+  name: Hugo Yang
+  bio: Frontend Developer <br> Fashion Design Tutor <br> Fashion school graduate
+  picture: assets/images/profile.jpg
+  github: thursdaycurry # github username
+  # # twitter: onepase # twitter username
+  # # facebook: onepase # facebook username
+  # # instagram: onepase # instagram username
+  # youtube: https://www.youtube.com/channel/UCMmAto-wxBootXN91AzBiDg # youtube username
+  linkedin: heeguyang # linkedin username
+  email: thursdaycurry@gmail.com # email adress
+
+# URL settings
+url: "http://127.0.0.1:4000" # Domain Name of host. [username].github.io for github pages
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+paginate: 20
+paginate_path: "/page/:num"
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:slug
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled: true
+  collections: false
