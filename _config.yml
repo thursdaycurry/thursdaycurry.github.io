@@ -3,8 +3,8 @@ site: Thursdaycurry
 title: Thursdaycurry - The frontend developer with the heart of a designer
 keywords: frontend developer, programmer and artist, fashion, designer
 description: Thursdaycurry is the frontend Developer with a designer background.
-lang: en-US
-timezone: Europe/Istanbul
+lang: ko-KR
+timezone: Asia/Seoul
 repo: https://thursdaycurry.github.io/ # site repo [optional]
 # google_verify: XXX # Put your Google Verification here
 # google_analytics: UA-XXXXXXXX-00 # Put your Google Analytics code
